@@ -614,8 +614,8 @@ figure {
 @media screen and (max-width: 768px) {
   .nav-tabs a {
     font-weight: normal;
-    font-size: 13px;
-    padding:10px !important;
+    font-size: 12px;
+    padding:7px !important;
   }
 }
 .nav-tabs .active a {
@@ -667,7 +667,7 @@ div.cs-select span {
 .cs-skin-border > span {
   border: rgb(255, 255, 255);
   background: rgb(255, 255, 255);
-  color: #F78536;
+  color: #336699;
 }
 .cs-skin-border > span::after {
   font-size: 14px !important;
@@ -679,8 +679,8 @@ div.cs-select span {
 }
 
 .cs-skin-border.cs-active > span {
-  background: rgba(0, 0, 0, 0.05) !important;
-  color: #F78536;
+  background: #fff!important;
+  color: #336699;
 }
 
 .cs-select .cs-options {
@@ -2000,7 +2000,7 @@ div.cs-select span {
     float: left;
         margin-top: 6px;
             line-height: 18px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -2051,6 +2051,49 @@ div.cs-select span {
 }
 
 
+.f14Bold{
+      font-size: 14px !important;  
+    font-weight: 600 !important;
+}
+
+
+.input-group-addon {
+    padding: 5px 10px !important; 
+    background-color: #ffffff !important;
+    border: 1px solid #fff !important;
+    border-radius: 0px !important;
+    font-size: 20px !important;
+}
+
+.form-control{
+  height: 40px !important;
+}
+
+
+.lableFont{
+  margin-bottom: 0 !important;
+      font-size: 11px !important;
+    color: #000 !important;
+}
+
+
+.filterBox{
+      background-color: #326699;
+    padding: 5px 25px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+.resultHead{
+    background-color: #fff;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 8px 5px;
+}
+
 
 /*
 @media screen and (max-width: 768px) {
@@ -2070,3 +2113,123 @@ div.cs-select span {
     width: calc(70% - 100px) !important;
   }
 }*/
+
+
+
+
+
+.nav-tabs:hover .skyscanner, .nav-tabs:focus .skyscanner {
+   background-image: url("../images/Asset/skyscanner-inactive.png") !important; 
+  background-size: 80% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.nav-tabs .active .skyscanner{
+    background-image: url("../images/Asset/skyscanner-active.png") !important;
+    background-size: 80% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+
+.nav-tabs:hover .tiketCom, .nav-tabs:focus .tiketCom {
+   background-image: url("../images/Asset/tiket-inactive.png") !important; 
+  background-size: 80% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.nav-tabs .active .tiketCom{
+    background-image: url("../images/Asset/tiket-active.png") !important;
+    background-size: 80% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.nav-tabs > li > .tiketCom {
+   background-image: url("../images/Asset/tiket-inactive.png") !important; 
+  background-size: 80% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+
+.nav-tabs > li > .skyscanner {
+   background-image: url("../images/Asset/skyscanner-inactive.png") !important; 
+  background-size: 80% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.whiteBox{
+  background-color: #fff;
+  padding: 10px;
+}
+
+
+.stop-line {
+    height: 2px;
+    width: 100%;
+    background-color: #a2a4ac;
+    margin: 5px auto;
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+
+.times {
+    font-size: 15px;
+    font-weight: 700;
+    color: #524c61;
+}
+
+
+.depart{
+      line-height: 16px !important;
+    text-align: right;
+    padding: 0 5px !important;
+}
+
+.arrive{
+   line-height: 16px !important;
+    text-align: left;
+    padding: 0 5px !important;
+
+}
+
+.stop-station{
+  font-size: 12px;
+}
+
+.stopBox{
+    padding: 2px !important;
+    text-align: center;
+    font-size: 10px;
+    line-height: 8px;
+}
+
+
+.chevright{
+  height: 9px;
+    width: 10px;
+    float: right;
+    position: relative;
+    margin-top: -3px;
+    margin-right: -3px;
+}
+
+.listBox{
+    border-bottom: 1px solid #f2f2f2;
+    width: 100%;
+    padding: 10px 0px;
+    display: inline-block;
+}
+
+
+.price{
+      font-size: 20px;
+    font-weight: bold;
+    color: #efbd03;
+}
