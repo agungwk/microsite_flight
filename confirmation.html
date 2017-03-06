@@ -41,7 +41,10 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/select2.css">
 
+	<!-- <link rel="stylesheet" href="plugins/rangeslider/rangeslider.css"> -->
+
 	<link rel="stylesheet" href="plugins/iCheck/all.css">
+	<link rel="stylesheet" href="plugins/bootstrap-slider/slider.css">
 
 
 	<!-- Modernizr JS -->
@@ -169,7 +172,7 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 			<div id="WAKTU" class="collapse filterCollapse">
 				<div class="row filterBox no-margin">
 					<div class="col-xs-8" style="text-align: left; padding: 2px 0;">WAKTU</div>
-					<div class="col-xs-4" style="padding: 0;"><button style="float: right;" class="btn btn-primary btnPad" data-toggle="collapse" data-target="#WAKTU">DONE</button></div> 
+					<div class="col-xs-4" style="padding: 0;"><button style="float: right;" class="btn btn-primary btnPad" data-toggle="collapse" data-target="#WAKTU">DONE</button></div>
 				</div>
 
 
@@ -177,22 +180,20 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 					<div style="border-bottom:1.5px solid #999999; padding-top:5px; padding-bottom:5px;">
 						<span class="clearAll" style="padding:0;">DEPARTURE TIMES</span>
 					</div>
-					
+
 					<div style="padding:10px 0">
 						<div style="font-size:14px; color:#000000">Outbond</div>
-						<div style="font-size:12px;">00:00 - 23:59</div>
-					<input type="range" min="10"  max="1000" step="10" value="300" data-orientation="vertical">
+						<div style="font-size:12px;">00:00 - 23:59</div> 
+						<input id="ex1" type="text" class="span2" value="" data-slider-min="100" data-slider-max="2400" data-slider-step="100" data-slider-value="[0,2300]"/>
 					</div>
 
 
 					<div style="padding:10px 0">
 						<div style="font-size:14px; color:#000000">Return</div>
-						<div style="font-size:12px;">00:00 - 23:59</div>
-					<input type="range" min="10"  max="1000" step="10" value="300" data-orientation="vertical">
+						<div style="font-size:12px;">00:00 - 23:59</div> 
+						<input id="ex2" type="text" class="span2" value="" data-slider-min="100" data-slider-max="2400" data-slider-step="100" data-slider-value="[0,2300]"/>
 					</div>
-
-				</div> 
-
+				</div>
 			</div>
 
 			<div id="TRANSIT" class="collapse filterCollapse">
@@ -248,20 +249,20 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 				</div>
 
 				<div>
-					<img src="images/Asset/lionTiket.png" style="height: 25px;">
+					<img src="images/Asset/lionTiket.png" style="height: 20px; margin: 10px 0;">
 				</div>
 
 				<div style="width: 100%; float: left; border-bottom: 1px solid #999999; padding-bottom: 5px;">
-					<div class="col-xs-5 arrive">
+					<div class="col-xs-5 arrive" style="padding: 0 !important;">
 						<div class="timesConfirm">08.30</div>
 						<div class="timesConfirm" data-id="10485"> Jakarta (CGK)</div>
 						<div style="font-size:9px;">Jumat, 11 Maret 2017</div>
 					</div>
 
-					<div class="col-xs-2 stopBox">
+					<div class="col-xs-2 stopBox" style="padding: 5px !Important; font-size: 8px;">
 						<div class="stops">
 							<ul class="stop-line"> 
-								<img class="chevright" src="images/Asset/cheright.png">
+								<img class="directArrow" src="images/Asset/cheright.png">
 							</ul>
 																
 							<div class="leg-stops">
@@ -269,15 +270,15 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-5 arrive">
+					<div class="col-xs-5 arrive" style="padding: 0 10px !important;">
 						<div class="timesConfirm">08.30</div>
 						<div class="timesConfirm" data-id="10485">Denpasar (DPS)</div>
 						<div style="font-size:9px;">Jumat, 11 Maret 2017</div>
 					</div>
-				</div>
+				</div>	
 
 				<div style="width:100%; float: left; padding-top: 10px; color:#efbd03;">
-					<span style="text-align:left; font-size:12px;">HARGA</span>
+					<span style="text-align:left; font-size:10px; font-weight: bold;">HARGA</span>
 					<span style="text-align:right; float:right; font-weight:bold; font-size:14px;">IDR 583,7434</span>
 				</div>			
 			
@@ -290,20 +291,20 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 				</div>
 
 				<div>
-					<img src="images/Asset/lionTiket.png" style="height: 25px;">
+					<img src="images/Asset/lionTiket.png" style="height: 20px; margin: 10px 0;">
 				</div>
 
-				<div style="width: 100%; float: left; border-bottom: 1px solid #999999; padding-bottom: 5px;">
-					<div class="col-xs-5 arrive">
+				<div class="col-xxs-12 col-xs-8 padLR" style="float: left; border-bottom: 1px solid #999999; padding-bottom: 5px;">
+					<div class="col-xs-5 arrive" style="padding: 0 !important;">
 						<div class="timesConfirm">08.30</div>
 						<div class="timesConfirm" data-id="10485"> Jakarta (CGK)</div>
 						<div style="font-size:9px;">Jumat, 11 Maret 2017</div>
 					</div>
 
-					<div class="col-xs-2 stopBox">
+					<div class="col-xs-2 stopBox" style="padding: 5px !Important; font-size: 8px;">
 						<div class="stops">
 							<ul class="stop-line"> 
-								<img class="chevright" src="images/Asset/cheright.png">
+								<img class="directArrow" src="images/Asset/cheright.png">
 							</ul>
 																
 							<div class="leg-stops">
@@ -311,16 +312,16 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-5 arrive">
+					<div class="col-xs-5 arrive" style="padding: 0 10px !important;">
 						<div class="timesConfirm">08.30</div>
 						<div class="timesConfirm" data-id="10485">Denpasar (DPS)</div>
 						<div style="font-size:9px;">Jumat, 11 Maret 2017</div>
 					</div>
 				</div>	
 
-				<div style="width:100%; float: left; padding-top: 10px; color:#efbd03;">
-					<span style="text-align:left; font-size:12px;">HARGA</span>
-					<span style="text-align:right; float:right; font-weight:bold; font-size:14px;">IDR 583,7434</span>
+				<div class="col-xxs-12 col-xs-4 padLR" style="float: left; padding-top: 10px; color:#efbd03;">
+					<span class="col-xs-6 col-md-12 col-sm-12" style="text-align:left; font-size:10px; font-weight: bold;">HARGA</span>
+					<span class="col-xs-6 col-md-12 col-sm-12"  style="text-align:right; float:right; font-weight:bold; font-size:14px;">IDR 583,7434</span>
 				</div>		
 			
 			</div>
@@ -382,13 +383,18 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
     <script src="plugins/iCheck/icheck.min.js"></script>
     <script src="plugins/iCheck/icheck.js"></script>
 
-    <script src="js/bootstrap-slider.js"></script>
+    <script src="plugins/bootstrap-slider/bootstrap-slider.js"></script>
+    <!-- <script src="plugins/bootstrap-slider/bootstrap-slider.js"></script>  -->
+
+    <script src="plugins/rangeslider/rangeslider.js"></script>
 
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
+
 	<script>
+
 		$(document).ready(function(){
 
 			$(".select2").select2({
@@ -396,26 +402,27 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
                 //allowClear: true
 			});
 
-			// With JQuery
-			$('#ex1').slider({
-				formatter: function(value) {
-					return 'Current value: ' + value;
-				}
-			});
-
-			// Without JQuery
-			var slider = new Slider('#ex1', {
-				formatter: function(value) {
-					return 'Current value: ' + value;
-				}
-			});
-
-
-			// With JQuery
+			// // With JQuery
+			// $('#ex1').slider({
+			// 	formatter: function(value) {
+			// 		return 'Current value: ' + value;
+			// 	}
+			// });
+			//
+			// // Without JQuery
+			// var slider = new Slider('#ex1', {
+			// 	formatter: function(value) {
+			// 		return 'Current value: ' + value;
+			// 	}
+			// });
+			//
+			//
+			// // With JQuery
+			$("#ex1").slider({});
 			$("#ex2").slider({});
-
-			// Without JQuery
-			var slider = new Slider('#ex2', {});
+			//
+			// // Without JQuery
+			// var slider = new Slider('#ex2', {});
 
 		});
 

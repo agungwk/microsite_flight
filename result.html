@@ -65,8 +65,11 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 				<div class="textBox">
 					<span><img src="images/Asset/chevron.png" class="dialog"></span>
 					<div class="titleText">PENERBANGAN</div>
-					<div class="center">Jakarta (CGK) - Bali (DPS)</div>
-					<div class=""><span style="font-size: 10px; float: left;">2 adult  |  Economy</span> <span style="font-size: 10px; float: right;">Jumat, 11 Maret 2017</span></div>
+					<div class="center gray">Jakarta (CGK) - Bali (DPS)</div>
+					<div class="row no-padding marginT">
+						<span class="dateGo gray" style="font-size: 10px; float: left;">2 adult  |  Economy</span> 
+						<span class="dateGo gray" style="font-size: 10px; float: right;">Jumat, 11 Maret 2017</span>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -167,10 +170,6 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 	                    </span>
                   	</div>
 
-
-
-
-
 				</div>
 			</div>
 
@@ -188,21 +187,17 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 
 					<div style="padding:10px 0">
 						<div style="font-size:14px; color:#000000">Outbond</div>
-						<div style="font-size:12px;">00:00 - 23:59</div>
-						<!-- <input type="range" min="10"  max="1000" step="10" value="300" data-orientation="vertical"> -->
-						<input id="ex1" type="text" class="span2" value="" data-slider-min="0" data-slider-max="2400" data-slider-step="100" data-slider-value="[0,2400]"/>
+						<div style="font-size:12px;">00:00 - 23:59</div> 
+						<input id="ex1" type="text" class="span2" value="" data-slider-min="100" data-slider-max="2400" data-slider-step="100" data-slider-value="[0,2300]"/>
 					</div>
 
 
 					<div style="padding:10px 0">
 						<div style="font-size:14px; color:#000000">Return</div>
-						<div style="font-size:12px;">00:00 - 23:59</div>
-						<!-- <input type="range" min="10"  max="1000" step="10" value="300" data-orientation="vertical"> -->
-						<input id="ex2" type="text" class="span2" value="" data-slider-min="0" data-slider-max="2400" data-slider-step="100" data-slider-value="[0,2400]"/>
+						<div style="font-size:12px;">00:00 - 23:59</div> 
+						<input id="ex2" type="text" class="span2" value="" data-slider-min="100" data-slider-max="2400" data-slider-step="100" data-slider-value="[0,2300]"/>
 					</div>
-
 				</div>
-
 			</div>
 
 			<div id="TRANSIT" class="collapse filterCollapse">
@@ -282,8 +277,9 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 								<div class="tab-content" style="padding: 10px;">
 									 <div role="tabpanel" class="tab-pane active" id="Skyscanner">
 										<div class="row">
-											<div class="col-xs-12 whiteBox">
+										<div class="col-xs-12 whiteBox">
 
+										<div class="col-xxs-12 col-xs-8">
 											<div class="listBox">
 												<img src="images/Asset/lionAir.png" style="height:auto; width: 70px; float: left;">
 
@@ -342,11 +338,12 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 													</div>
 												</div>
 											</div>
+										</div>
 
-											<div>
-												<div class="col-xs-6 no-padding price">Rp.342.242/org</div>
-												<div class="col-xs-6 no-padding">
-													<input onClick="window.location.href='confirmation.html'" style="padding: 5px; font-size: 14px; width: 70%; float: right;" type="submit" class="btn btn-primary btn-block" value="PESAN">
+											<div class="col-xxs-12 col-xs-4 padOrder">
+												<div class="col-xs-7 col-md-12 col-sm-12 no-padding price">Rp.342.242/org</div>
+												<div class="col-xs-5 col-md-12 col-sm-12 no-padding">
+													<input onClick="window.location.href='confirmation.html'" type="submit" class="btn btn-primary btn-block btnResultOrder" value="PESAN">
 												</div>
 											</div>
 										</div>
@@ -510,26 +507,6 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
 	<script>
-
-	$('#buying_slider_min').change(function() {
-    var min = parseInt($(this).val());
-    var max = parseInt($('#buying_slider_max').val());
-    if (min > max) {
-        $(this).val(max);
-        $(this).slider('refresh');
-	    }
-	});
-	$('#buying_slider_max').change(function() {
-	    var min = parseInt($('#buying_slider_min').val());
-	    var max = parseInt($(this).val());
-
-	    if (min > max) {
-	        $(this).val(min);
-	        $(this).slider('refresh');
-	    }
-	});
-
-
 
 		$(document).ready(function(){
 

@@ -52,7 +52,7 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 	<![endif]-->
 
 	</head>
-	<body  style="background-color: #7798c5;">
+	<body  style="background-color: #326699;">
 		<header class="navHead">
 			<div class="container">
 				<div style="width:85px; float: left;">
@@ -75,27 +75,94 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 		</div>
 
 
-		<div class="container">
-						<div class="row mt no-margin animate-box">
+		<div class="container animate-box" style="background-color: #7798c5;">
+			<div class="row mt no-margin animate-box">
+				<div class="col-xs-4 mt alternate no-padding" style="padding-right: 10px !important;"> 
+					<label for="class" class="lableFont">TITEL:</label>
+					<select class="cs-select cs-skin-border">
+						<option value="" disabled selected>TUAN</option>
+						<option value="NYONYA">NYONYA</option>
+						<option value="AGAN">AGAN</option> 
+					</select>
+				</div>
 
-								<div class="col-xxs-12 mt alternate no-padding"> 
-									<label for="class" class="lableFont">TITEL:</label>
+				<div class="col-xs-8 mt alternate no-padding"> 
+					<label for="class" class="lableFont">NAMA LENGKAP:</label>
+					<input type="text" class="form-control noRadius" id="from-place" placeholder="ISI SESUAI KTP/SIM/PASPOR" style="padding: 10px;">
+				</div>
+			</div>
 
-											<div class="row">
 
-												<div class="col-xs-4 alternate">
-													<div class="input-group">
-														<select class="cs-select cs-skin-border">
-															<option value="" disabled selected>TUAN</option>
-															<option value="1">NYONYA</option>
-															<option value="2">AGAN</option> 
-														</select>
- 													</div>
-												</div>
+			<div class="row mt no-margin animate-box">
+				<label for="class" class="lableFont">NO. TELEPON:</label>
+				<div class="row no-margin">
+					<div class="col-xs-3 mt alternate no-padding" style="padding-right: 10px !important;"> 
+						<input type="text" class="form-control noRadius" id="from-place" placeholder="621" style="padding: 10px;" readonly>
+					</div>
 
-											</div> 
-								</div>
-						</div>
+					<div class="col-xs-9 mt alternate no-padding">
+						<input type="text" class="form-control noRadius" id="from-place" placeholder="" style="padding: 10px;">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container animate-box">
+			<div class="headList">DETAIL PENUMPANG 1</div>
+
+			<span class="f14">
+				<label class="squaredFourWhite">
+					<input type="checkbox" value="None" id="same" name="same"/>
+					<label for="same"></label>
+				</label> 
+				<label class="f12 labelCheck">SAMA DENGAN KONTAK</label>
+	        </span>
+
+
+			<div class="row mt no-margin animate-box">
+				<div class="col-xs-4 mt alternate no-padding" style="padding-right: 10px !important;"> 
+					<label for="class" class="lableFont">TITEL:</label>
+					<select class="cs-select cs-skin-border">
+						<option value="" disabled selected>TUAN</option>
+						<option value="NYONYA">NYONYA</option>
+						<option value="AGAN">AGAN</option> 
+					</select>
+				</div>
+
+				<div class="col-xs-8 mt alternate no-padding"> 
+					<label for="class" class="lableFont">NAMA LENGKAP:</label>
+					<input type="text" class="form-control noRadius" id="from-place" placeholder="ISI SESUAI KTP/SIM/PASPOR" style="padding: 10px;">
+				</div>
+			</div>
+
+
+
+
+			<div class="headList">DETAIL PENUMPANG 2</div>
+
+			<div class="row mt no-margin animate-box">
+				<div class="col-xs-4 mt alternate no-padding" style="padding-right: 10px !important;"> 
+					<label for="class" class="lableFont">TITEL:</label>
+					<select class="cs-select cs-skin-border">
+						<option value="" disabled selected>TUAN</option>
+						<option value="NYONYA">NYONYA</option>
+						<option value="AGAN">AGAN</option> 
+					</select>
+				</div>
+
+				<div class="col-xs-8 mt alternate no-padding"> 
+					<label for="class" class="lableFont">NAMA LENGKAP:</label>
+					<input type="text" class="form-control noRadius" id="from-place" placeholder="ISI SESUAI KTP/SIM/PASPOR" style="padding: 10px;">
+				</div>
+			</div>
+
+
+			<div class="col-xs-12" style="text-align:center; width:100%;">  
+				<button onClick="window.location.href='order-form.html'" style="margin: 20px auto; padding: 5px; font-size: 14px; width: 70%;" type="submit" class="btn btn-primary btn-block" value="PESAN">PESAN </button>  
+			</div>
+
+ 
 		</div>
 
  
