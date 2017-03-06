@@ -2078,8 +2078,8 @@ div.cs-select span {
 
 
 .filterBox{
-      background-color: #326699;
-    padding: 5px 25px;
+    background-color: #326699;
+    padding: 5px 15px;
     color: #fff;
     font-size: 12px;
     text-align: center;
@@ -2358,3 +2358,88 @@ div.cs-select span {
     font-weight: bold;
     text-align: right;
 }
+
+
+
+.squaredFour {
+  width: 20px;
+  position: relative;
+  margin: 0px 0px 0px 10px !important
+}
+
+
+.squaredFour label {
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #999999;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 4px;
+   /* box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);*/
+}
+
+
+
+   .squaredFour label:after {
+    content: '';
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+
+.squaredFour.active label:after {
+    content: '';
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+
+.fh5co-nav-toggle.active i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+
+
+
+    .squaredFour label:hover::after {
+      opacity: 0.5;
+    }
+
+
+  .squaredFour input[type=checkbox] {
+    visibility: hidden;
+    }
+
+    .squaredFour input:checked + label:after {
+      opacity: 1;
+    }
+  
+/* end .squaredFour */
+
+
