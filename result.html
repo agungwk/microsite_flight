@@ -199,6 +199,14 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 					<input type="range" min="10"  max="1000" step="10" value="300" data-orientation="vertical">
 					</div>
 
+
+
+<!-- <div class="priceRangeInfo">
+      <label for="buying_slider_min">Price</label>
+      <input type="range" name="buying_slider_min" id="buying_slider_min" class="minBuyingSlider" value="0" min="0" max="100" />
+      <input type="range" name="buying_slider_max" id="buying_slider_max" class="maxBuyingSlider" value="100" min="0" max="100" data-track-theme="b"/>
+</div> -->
+
 				</div> 
 
 			</div>
@@ -508,6 +516,27 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
 	<script>
+
+	$('#buying_slider_min').change(function() {
+    var min = parseInt($(this).val());
+    var max = parseInt($('#buying_slider_max').val());
+    if (min > max) {
+        $(this).val(max);
+        $(this).slider('refresh');
+	    }
+	});
+	$('#buying_slider_max').change(function() {
+	    var min = parseInt($('#buying_slider_min').val());
+	    var max = parseInt($(this).val());
+
+	    if (min > max) {
+	        $(this).val(min);
+	        $(this).slider('refresh');
+	    }
+	});
+
+
+
 		$(document).ready(function(){
 
 			$(".select2").select2({
