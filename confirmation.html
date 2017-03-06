@@ -79,75 +79,158 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 			<div id="MASKAPAI" class="collapse filterCollapse">
 				<div class="row filterBox no-margin">
 					<div class="col-xs-8" style="text-align: left; padding: 2px 0;">MASKAPAI</div>
-					<div class="col-xs-4"><button class="btn btn-primary btnPad" data-toggle="collapse" data-target="#MASKAPAI">DONE</button></div> 
+					<div class="col-xs-4" style="padding: 0;"><button style="float: right;" class="btn btn-primary btnPad" data-toggle="collapse" data-target="#MASKAPAI">DONE</button></div> 
 				</div>
 				<div class="form-group" style="padding:0 15px;">
-					<div style="border-bottom:1.5px solid #999999; padding-top:5px;">
+					<div style="border-bottom:2px solid #d2cece; padding-top:10px; padding-bottom:5px;">
 						<span class="selectAll">SELECT ALL</span>
 						<span class="clearAll">CLEAR ALL</span>
 					</div>
+
+
 					<div Class="listBox"> 
 						<span class="bold f14" style="float:left;">Air Asia</span>
-						<span style="float:right;">
-							<label class="f14">
-		                     IDR 500.000
-		                    </label>
-		                    <label>
-		                      <input type="checkbox" class="minimal">
-		                    </label>
+						<span class="f14" style="float:right;">
+							 IDR 500.000  
+							<label class="squaredFour">
+							    <input type="checkbox" value="None" id="Asia" name="check" checked />
+							    <label for="Asia"></label>
+							</label>  
 	                    </span>
                   	</div>
+
+
+
+                  	<div Class="listBox"> 
+						<span class="bold f14" style="float:left;">Batik Air</span>
+						<span class="f14" style="float:right;">
+							 IDR 500.000  
+							<label class="squaredFour">
+							    <input type="checkbox" value="None" id="Batik" name="Batik" checked />
+							    <label for="Batik"></label>
+							</label>  
+	                    </span>
+                  	</div>
+
+
+
+                  	<div Class="listBox"> 
+						<span class="bold f14" style="float:left;">Citilink</span>
+						<span class="f14" style="float:right;">
+							 IDR 500.000  
+							<label class="squaredFour">
+							    <input type="checkbox" value="None" id="Citilink" name="Citilink" checked />
+							    <label for="Citilink"></label>
+							</label>  
+	                    </span>
+                  	</div>
+
+
+                  	<div Class="listBox"> 
+						<span class="bold f14" style="float:left;">Garuda Indonesia</span>
+						<span class="f14" style="float:right;">
+							 IDR 500.000  
+							<label class="squaredFour">
+							    <input type="checkbox" value="None" id="Garuda" name="Garuda" checked />
+							    <label for="Garuda"></label>
+							</label>  
+	                    </span>
+                  	</div>
+
+
+
+                  	<div Class="listBox"> 
+						<span class="bold f14" style="float:left;">Lion Air</span>
+						<span class="f14" style="float:right;">
+							 IDR 500.000  
+							<label class="squaredFour">
+							    <input type="checkbox" value="None" id="Lion" name="Lion" checked />
+							    <label for="Lion"></label>
+							</label>  
+	                    </span>
+                  	</div>
+
+
+
+                  	<div Class="listBox"> 
+						<span class="bold f14" style="float:left;">Malaysia Airlines</span>
+						<span class="f14" style="float:right;">
+							 IDR 500.000  
+							<label class="squaredFour">
+							    <input type="checkbox" value="None" id="Malaysia" name="Malaysia" checked />
+							    <label for="Malaysia"></label>
+							</label>  
+	                    </span>
+                  	</div> 
+  
 				</div>
 			</div>
 
 			<div id="WAKTU" class="collapse filterCollapse">
 				<div class="row filterBox no-margin">
 					<div class="col-xs-8" style="text-align: left; padding: 2px 0;">WAKTU</div>
-					<div class="col-xs-4"><button class="btn btn-primary btnPad" data-toggle="collapse" data-target="#WAKTU">DONE</button></div> 
+					<div class="col-xs-4" style="padding: 0;"><button style="float: right;" class="btn btn-primary btnPad" data-toggle="collapse" data-target="#WAKTU">DONE</button></div> 
 				</div>
-				<div>
-				Filter by price interval: <b>€ 10</b> 
-				<input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> 
-				<b>€ 1000</b>
-				</div>
+
+
+				<div class="form-group" style="padding:0 15px;">
+					<div style="border-bottom:1.5px solid #999999; padding-top:5px; padding-bottom:5px;">
+						<span class="clearAll" style="padding:0;">DEPARTURE TIMES</span>
+					</div>
+					
+					<div style="padding:10px 0">
+						<div style="font-size:14px; color:#000000">Outbond</div>
+						<div style="font-size:12px;">00:00 - 23:59</div>
+					<input type="range" min="10"  max="1000" step="10" value="300" data-orientation="vertical">
+					</div>
+
+
+					<div style="padding:10px 0">
+						<div style="font-size:14px; color:#000000">Return</div>
+						<div style="font-size:12px;">00:00 - 23:59</div>
+					<input type="range" min="10"  max="1000" step="10" value="300" data-orientation="vertical">
+					</div>
+
+				</div> 
 
 			</div>
 
 			<div id="TRANSIT" class="collapse filterCollapse">
 				<div class="row filterBox no-margin">
 					<div class="col-xs-8" style="text-align: left; padding: 2px 0;">TRANSIT</div>
-					<div class="col-xs-4"><button class="btn btn-primary btnPad" data-toggle="collapse" data-target="#TRANSIT">DONE</button></div> 
+					<div class="col-xs-4" style="padding: 0;"><button style="float: right;" class="btn btn-primary btnPad" data-toggle="collapse" data-target="#TRANSIT">DONE</button></div> 
 				</div>
 
 				<div class="form-group" style="padding:0 15px;">
-					<div style="border-bottom:1.5px solid #999999; padding-top:5px;">
+					<div style="border-bottom:1.5px solid #999999; padding-top:5px; padding-bottom:5px;">
 						<span class="clearAll" style="padding:0;">STOPS</span>
 					</div>
+
+
 					<div Class="listBox"> 
 						<span class="bold f14" style="float:left;">Direct</span>
-						<span style="float:right;">
-							<label class="f14">
-		                     IDR 500.000
-		                    </label>
-		                    <label>
-		                      <input type="checkbox" class="minimal">
-		                    </label>
+						<span class="f14" style="float:right;">
+							 IDR 500.000  
+							<label class="squaredFour">
+							    <input type="checkbox" value="None" id="Malaysia" name="Malaysia" checked />
+							    <label for="Malaysia"></label>
+							</label>  
 	                    </span>
                   	</div>
+
 
                   	<div Class="listBox"> 
 						<span class="bold f14" style="float:left;">1 Stop</span>
-						<span style="float:right;">
-							<label class="f14">
-		                     IDR 500.000
-		                    </label>
-		                    <label>
-		                      <input type="checkbox" class="minimal">
-		                    </label>
+						<span class="f14" style="float:right;">
+							 IDR 500.000  
+							<label class="squaredFour">
+							    <input type="checkbox" value="None" id="Malaysia" name="Malaysia" checked />
+							    <label for="Malaysia"></label>
+							</label>  
 	                    </span>
                   	</div>
 
-                  	<div Class="listBox"> 
+				 	<div Class="listBox"> 
 						<span class="bold f14" style="float:left;">2x Stop</span>
 						<span style="float:right;">
 							None
