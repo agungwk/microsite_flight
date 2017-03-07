@@ -2297,6 +2297,8 @@ div.cs-select span {
     display: inline-block;
     text-align: center;
     background-color: #fff;
+        margin-top: 3px;
+
 }
 
 .headResult{
@@ -2675,3 +2677,140 @@ div.cs-select span {
       padding-left: 0 !important;
       padding-right: 0!important
 }
+
+
+
+
+
+
+
+
+
+/*checkbox*/
+
+.width100 {
+  width: 100%;
+}
+
+.col-mgbtm {
+  margin-bottom: 25px;
+}
+
+.font-josefin {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.grey-hd1 {
+  color: #4a4a4a;
+  font-size: 25px;
+  font-weight: 600;
+}
+// General end
+
+.cat_head {
+  background: #f4f4f4;
+}
+
+.dots {
+  text-align: center;
+  margin-bottom: 20px;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+.dots span:before {
+    content: "●";
+    font-size: 15px;
+}
+.dots .green:before {
+    color: #4bbfab;
+}
+.dots .pink:before {
+    color: #ed7baf;
+}
+.dots .blue:before {
+    color: #70c3f3;
+}
+.dots .yellow:before {
+    color: #fab916;
+}
+
+
+
+
+#checkboxes {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+#checkboxes .whatever{
+    padding: 0px; 
+    margin-bottom: 0;
+}
+
+#checkboxes img {
+    margin-bottom: 9px;
+}
+
+#checkboxes input[type=checkbox]{
+    display: none;
+}
+
+.check_details {
+    color: $black1;
+}
+
+#checkboxes i span {
+      display: inline-block;
+      margin-left: 3px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+}
+
+#checkboxes .check_name_div {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+#checkboxes .check_overlay {
+    background: rgba(86, 74, 74, 0.8);
+    cursor: pointer;
+    position: absolute;
+    height: full;
+    margin-top: -10px;
+    left: 8px;
+    overflow: hidden;
+    right: 8px; 
+    z-index: 1;
+    display: none;
+    padding: 20%;
+    margin-bottom: 9px;
+    bottom: 0;
+}
+
+#checkboxes .check_overlay i{
+    font-size: 28px;
+ /*   margin-top: 45%;
+    margin-left: 45%;*/
+    color: #feffff;
+
+
+        background-color: rgba(50, 102, 153, 0.66);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 500px) {
+  .cat_check .col-xs-6 {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
