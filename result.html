@@ -512,7 +512,7 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 						</div><!--row end-->
 
 						<div class="cat_check"> 
-							<div class="col-xs-12 marginB5 no-padding">
+							<div class="col-xs-12 marginB5 no-padding" id="show">
 								<div id="checkboxes">
 									<input type="checkbox" name="rGroup" class="check_cat" value="result" id="r1"/>
 									<div class="check_overlay">
@@ -563,7 +563,7 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 		</div>
 
 
-		<div class="btnDock">PESAN</div>
+		<div id="btnPesan" class="btnDock" style="display:none;">PESAN</div>
 	</div>
 								</div> <!-- Tab content -->
 
@@ -641,6 +641,16 @@ font-family: "Montserrat", Montserrat, Arial, sans-serif; -->
 		});
 	  
 	}); //document-ready endif
+
+
+	$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#btnPesan").hide();
+    });
+    $("#show").click(function(){
+        $("#btnPesan").show();
+    });
+});
   
 
 		$(document).ready(function(){

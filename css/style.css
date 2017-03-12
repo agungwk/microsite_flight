@@ -2924,4 +2924,5 @@ div.cs-select span {
     font-weight: bold;
     color: #fff;
     margin: 10px;
+        z-index: 1;
 }
