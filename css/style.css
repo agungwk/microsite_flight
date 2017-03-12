@@ -2168,6 +2168,7 @@ div.cs-select span {
 .whiteBox{
   background-color: #fff;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -2775,42 +2776,139 @@ div.cs-select span {
     margin-top: 5px;
 }
 
-#checkboxes .check_overlay {
-    background: rgba(86, 74, 74, 0.8);
+#checkboxes .check_overlay { 
+    z-index: 1; 
+}
+ 
+
+
+
+
+
+  
+
+.width100 {
+  width: 100%;
+}
+
+.col-mgbtm {
+  margin-bottom: 25px;
+}
+
+.font-josefin {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.grey-hd1 {
+  color: #4a4a4a;
+  font-size: 25px;
+  font-weight: 600;
+}
+// General end
+
+.cat_head {
+  background: #f4f4f4;
+}
+
+.dots {
+  text-align: center;
+  margin-bottom: 20px;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+ .dots span:before {
+    content: "●";
+    font-size: 15px;
+  }
+ .dots .green:before {
+    color: #4bbfab;
+  }
+ .dots .pink:before {
+    color: #ed7baf;
+  }
+ .dots .blue:before {
+    color: #70c3f3;
+  }
+.dots .yellow:before {
+    color: #fab916;
+  } 
+
+#checkboxes {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+  #checkboxes .whatever{
+    background: white;
     cursor: pointer;
-    position: absolute;
-    height: full;
-    margin-top: -10px;
-    left: 8px;
-    overflow: hidden;
-    right: 8px; 
-    z-index: 1;
-    display: none;
-    padding: 20%;
-    margin-bottom: 9px;
-    bottom: 0;
-}
-
-#checkboxes .check_overlay i{
-    font-size: 28px;
- /*   margin-top: 45%;
-    margin-left: 45%;*/
-    color: #feffff;
-
-
-        background-color: rgba(50, 102, 153, 0.66);
-    border-radius: 50%;
+    display: inline-block;
     padding: 10px;
-    margin: 0 auto;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    width: 100%;
+  }
+
+  #checkboxes .whatever img {
+    margin-bottom: 9px;
+  }
+
+  #checkboxes .whatever input[type=checkbox]{
+    display: none;
+  }
+
+  #checkboxes .whatever .check_details {
+    color: $black1;
+  }
+
+    #checkboxes .whatever i span {
+      display: inline-block;
+      margin-left: 3px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+    } 
+
+ #checkboxes .check_name_div {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+  #checkboxes .check_overlay {
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    right: 0;
+    display: none;
+    height: 100%; 
+        padding-top: 30%;
+  }
+
+    #checkboxes .check_overlay i{
+      font-size: 28px;
+      margin-top: 45%;
+      margin-left: 35%;
+      color: #326699;
+      background-color: rgba(238, 189, 3, 0.33);
+      padding: 10px;
+      border-radius: 50%;
+      border: 2px solid rgba(50, 102, 153, 0.39);
+    }
+
+.marginB5{
+  margin-bottom: 5px;
 }
 
-
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {
   .cat_check .col-xs-6 {
     float: none;
     width: 100%;
   }
 }
-
+*/
 
 
