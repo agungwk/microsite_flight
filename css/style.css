@@ -2889,7 +2889,7 @@ div.cs-select span {
   }
 
     #checkboxes .check_overlay i{
-      font-size: 28px;
+      font-size: 20px;
       margin-top: 45%;
       margin-left: 35%;
       color: #326699;
@@ -2912,3 +2912,16 @@ div.cs-select span {
 */
 
 
+.btnDock{
+    background-color: #eebd03;
+    padding: 12px;
+    width: calc(100% - 20px);
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px;
+}
